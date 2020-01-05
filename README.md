@@ -31,3 +31,6 @@ The -AllYears parameter is also availble but will take long to run as it will in
 -ExportCache | [Switch]
 -UseCache | [Switch]
 -Year | [Array]1938-The current year
+
+# Disclaimer
+The actual release days are not always entirely accurate but the months are. This is due to parsing the HTML.
