@@ -8,6 +8,6 @@ Please copy and paste the Get-AlbumsFromWiki.ps1 file found in this repository t
 
 # Usage
 
-`.\Get-AlbumsFromWiki.ps1 -Year 2019
+`.\Get-AlbumsFromWiki.ps1 -Year 2019`
 
 ![Usage](/images/2019.PNG)
