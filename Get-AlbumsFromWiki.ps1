@@ -9,7 +9,7 @@ function Test-URL {
 		$CurrentURL
 	)
 	try {
-		$HTTPRequest = [System.Net.WebRequest]::Create($CurrentURL)
+$HTTPRequest = [System.Net.WebRequest]::Create($CurrentURL)
 		$HTTPResponse = $HTTPRequest.GetResponse()
 		$HTTPStatus = [Int]$HTTPResponse.StatusCode
 
