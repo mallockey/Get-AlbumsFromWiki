@@ -59,7 +59,7 @@ $AlbumProps = [Ordered]@{
 }
 
 foreach ($CurrentYear in $Year) {
-    Counter = 0
+    $Counter = 0
     if ($UseCache) {
         try {
 	    $ImportedAlbum = Import-Csv "$PSScriptRoot\AlbumCache\ListOf$($CurrentYear)Albums.csv"
