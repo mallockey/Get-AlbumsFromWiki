@@ -24,7 +24,7 @@ Then run the script again using the `-UseCache`:
 
 The `-AllYears` parameter is also availble but will take long to run as it will invoke web requests from 1938 to the current year.
 
-# List of possible parameters
+## List of possible parameters
  Parameter | Possible Values 
 --- | --- |
 -AllYears | [Switch]
@@ -32,5 +32,5 @@ The `-AllYears` parameter is also availble but will take long to run as it will 
 -UseCache | [Switch]
 -Year | [Array]1938-The current year
 
-# Disclaimer
+## Disclaimer
 The actual release days are not always entirely accurate but the months are. This is due to parsing the HTML.
