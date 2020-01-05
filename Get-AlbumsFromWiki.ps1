@@ -169,5 +169,3 @@ foreach ($CurrentYear in $Year) {
 	}
 }
 $ArrayOfAlbums
-
-
