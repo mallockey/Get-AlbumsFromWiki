@@ -1,8 +1,8 @@
 param(
-[Switch]$AllYears,
-[Switch]$ExportCache,
-[Switch]$UseCache,
-[Array]$Year = (Get-Date).Year
+	[Switch]$AllYears,
+	[Switch]$ExportCache,
+	[Switch]$UseCache,
+	[Array]$Year = (Get-Date).Year
 )
 function Test-URL {
 	param(
