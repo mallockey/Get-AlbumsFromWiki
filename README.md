@@ -30,4 +30,4 @@ The -AllYears parameter is also availble but will take long to run as it will in
 -AllYears | [Switch]
 -ExportCache | [Switch]
 -UseCache | [Switch]
--Year | 1938-The current year
+-Year | [Array]1938-The current year
