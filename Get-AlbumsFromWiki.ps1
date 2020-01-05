@@ -9,9 +9,9 @@ function Test-URL {
 		$CurrentURL
 	)
 	try {
-$HTTPRequest = [System.Net.WebRequest]::Create($CurrentURL)
-		$HTTPResponse = $HTTPRequest.GetResponse()
-		$HTTPStatus = [Int]$HTTPResponse.StatusCode
+	$HTTPRequest = [System.Net.WebRequest]::Create($CurrentURL)
+	$HTTPResponse = $HTTPRequest.GetResponse()
+	$HTTPStatus = [Int]$HTTPResponse.StatusCode
 
 		if ($HTTPStatus -ne 200) {
 			return $False
