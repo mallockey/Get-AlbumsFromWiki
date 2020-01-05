@@ -17,3 +17,17 @@ Use the -ExportCache parameter to export the table to CSVs. This will create a f
 `.\Get-AlbumsFromWiki.ps1 -Year 2010,2011,2012 -ExportCache`
 
 ![Usage](cache.PNG)
+
+Then run the script again using the -UseCache:
+
+`.\Get-AlbumsFromWiki.ps1 -Year 2010,2011,2012 -UseCache`
+
+The -AllYears parameter is also availble but will take long to run as it will invoke web requests from 1938 to the current year.
+
+# List of possible parameters
+ Parameter | Possible Values 
+--- | --- |
+-AllYears | [Switch]
+-ExportCache | [Switch]
+-UseCache | [Switch]
+-Year | 1938-The current year
