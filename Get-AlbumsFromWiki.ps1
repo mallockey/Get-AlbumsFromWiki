@@ -1,17 +1,17 @@
 param(
-	[Switch]$AllYears,
-	[Switch]$ExportCache,
-	[Switch]$UseCache,
-	[Array]$Year = (Get-Date).Year
+    [Switch]$AllYears,
+    [Switch]$ExportCache,
+    [Switch]$UseCache,
+    [Array]$Year = (Get-Date).Year
 )
 function Test-URL {
-	param(
-		$CurrentURL
-	)
-	try {
-	$HTTPRequest = [System.Net.WebRequest]::Create($CurrentURL)
-	$HTTPResponse = $HTTPRequest.GetResponse()
-	$HTTPStatus = [Int]$HTTPResponse.StatusCode
+    param(
+        $CurrentURL
+    )
+     try {
+         $HTTPRequest = [System.Net.WebRequest]::Create($CurrentURL)
+	 $HTTPResponse = $HTTPRequest.GetResponse()
+	 $HTTPStatus = [Int]$HTTPResponse.StatusCode
 
 		if ($HTTPStatus -ne 200) {
 			return $False
