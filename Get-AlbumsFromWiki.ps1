@@ -44,7 +44,7 @@ if ($AllYears) {
 
 if ($ExportCache) {
     if (!(Test-Path "$PSScriptRoot\AlbumCache\")) {
-        New-Item "$PSScriptRoot\AlbumCache\" -ItemType Directory
+        New-Item "$PSScriptRoot\AlbumCache\" -ItemType Directory | Out-Null
     }
 }
 
