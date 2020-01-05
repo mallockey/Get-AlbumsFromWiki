@@ -150,11 +150,11 @@ foreach ($CurrentYear in $Year) {
 			if ($ExportCache) {
 			    $ArrayOfAlbums | Where-Object { $_.ReleaseYear -eq "$CurrentYear" } | Export-Csv "$PSScriptRoot\AlbumCache\ListOf$($CurrentYear)Albums.csv" -NoTypeInformation
 			}
-		}
-		else {
-			Write-Warning "$URL is not a valid link"
-		}
-	}
+		    }
+        else {
+	    Write-Warning "$URL is not a valid link"
+	 }
+    }
 }
 $ArrayOfAlbums
 
