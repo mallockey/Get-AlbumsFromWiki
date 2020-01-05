@@ -12,17 +12,14 @@ function Test-URL {
          $HTTPRequest = [System.Net.WebRequest]::Create($CurrentURL)
 	 $HTTPResponse = $HTTPRequest.GetResponse()
 	 $HTTPStatus = [Int]$HTTPResponse.StatusCode
-
-		if ($HTTPStatus -ne 200) {
-			return $False
-		}
-
-		$HTTPResponse.Close()
-
-	}catch {
-		return $False
-	}	
-	return $True
+	     if ($HTTPStatus -ne 200) {
+	         return $False
+	     }
+	     $HTTPResponse.Close()
+    }catch {
+        return $False
+    }	
+    return $True
 }
 function Clean-HTMLString {
 	param(
@@ -44,7 +41,6 @@ if ($AllYears) {
 		Write-Warning "This will take some time. Getting music albums from 1938 to $ThisYear"
 		Write-Warning "Be sure to use to use the -ExportCache parameter to speed up search times after this run"
 	}
-
 }
 
 if ($ExportCache) {
