@@ -16,7 +16,7 @@ Use the `-ExportCache` parameter to export the table to CSVs. This will create a
 
 `.\Get-AlbumsFromWiki.ps1 -Year 2010,2011,2012 -ExportCache`
 
-![Usage](cache.PNG)
+![Usage](githubmedia/cache.PNG)
 
 Then run the script again using the `-UseCache`:
 
