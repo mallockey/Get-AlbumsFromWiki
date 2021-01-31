@@ -10,7 +10,7 @@ A PowerShell webscraper that gets music albums from Wikipedia and formats it int
 
 `.\Get-AlbumsFromWiki.ps1 -Year 2019`
 
-![Usage](2019.PNG)
+![Usage](githubmedia/getAlbums.gif)
 
 Use the `-ExportCache` parameter to export the table to CSVs. This will create a folder where the script is running called "AlbumCache" and put all the CSVs in the folder. If you run the script again, you can use the `-UseCache` parameter and it will automatically reference the exported CSVs instead of making web requests and formatting the data again.
 
@@ -31,6 +31,3 @@ The `-AllYears` parameter is also availble but will take long to run as it will 
 -ExportCache | [Switch]
 -UseCache | [Switch]
 -Year | [Array]1938-The current year
-
-## Disclaimer
-The actual release days are not always entirely accurate but the months are. This is due to parsing the HTML.
